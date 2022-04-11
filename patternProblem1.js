@@ -15,11 +15,11 @@
 const prompt = require("prompt-sync")({ sigint: true });
 const input = prompt("Enter A number : ");
 
-for (i = 1; i <= input; i++) {
+for (let i = 1; i <= input; i++) {
   let temp = "";
-  for (j = input - i; j >= 0; j--) {
+  for (let j = input - i; j >= 0; j--) {
     if (j === 0) {
-      for (k = i; k > 0; k--) {
+      for (let k = i; k > 0; k--) {
         temp += k;
       }
     } else {
