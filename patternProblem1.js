@@ -1,17 +1,3 @@
-// pattern problem 1
-
-// input:
-// 5
-
-// output:
-//     1
-//    21
-//   321
-//  4321
-// 54321
-
-// Don't use arrays
-
 const prompt = require("prompt-sync")({ sigint: true });
 const input = prompt("Enter A number : ");
 
@@ -28,3 +14,17 @@ for (let i = 1; i <= input; i++) {
   }
   console.log(temp);
 }
+
+// pattern problem 1
+
+// input:
+// 5
+
+// output:
+//     1
+//    21
+//   321
+//  4321
+// 54321
+
+// Don't use arrays
