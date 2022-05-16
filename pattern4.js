@@ -1,17 +1,17 @@
-// *****
-// *****
-// *****
-// *****
-// *****
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
 
 const prompt = require("prompt-sync")({ sigint: true });
 
 const input = prompt("Number : ");
 
 const pattern = (n) => {
-  for (let i = 1; i <= n; i++) {
-    for (let j = 1; j <= n; j++) {
-      process.stdout.write("*");
+  for (let row = 1; row <= n; row++) {
+    for (let col = 1; col <= row; col++) {
+      process.stdout.write(col + " ");
     }
     console.log();
   }

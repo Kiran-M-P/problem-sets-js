@@ -1,16 +1,15 @@
-// *****
-// *****
-// *****
-// *****
+// *
+// **
+// ***
+// ****
 // *****
 
 const prompt = require("prompt-sync")({ sigint: true });
-
-const input = prompt("Number : ");
+const input = prompt("No of rows: ");
 
 const pattern = (n) => {
-  for (let i = 1; i <= n; i++) {
-    for (let j = 1; j <= n; j++) {
+  for (let row = 1; row <= n; row++) {
+    for (let col = 1; col <= row; col++) {
       process.stdout.write("*");
     }
     console.log();
